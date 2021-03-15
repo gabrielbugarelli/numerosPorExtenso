@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <title>Números por exetenso</title>
+</head>
+
+<body>
+    <div class="container mx-auto p-4">
+        <h1 class="text-center text-2xl font-semibold mb-8">
+            Números por exetenso
+        </h1>
+
+        <label class="flex flex-col space-y-2 border p-2 shadow mb-4 rounded-lg">
+            <span>Escolha um número entre 0 e 999:</span>
+            <input id="inputRange" type="range" value="0" min="0" max="999" step="1" />
+        </label>
+
+        <label class="flex flex-col space-y-2 border p-2 shadow mb-4 rounded-lg">
+            <span>Número atual:</span>
+            <input id="inputCurrentNumber" class="bg-gray-100 p-1" type="text" value="0" readonly disabled />
+        </label>
+
+        <label class="flex flex-col space-y-2 border p-2 shadow mb-4 rounded-lg">
+            <span>Número por exetenso:</span>
+            <input id="inputNumberText" class="bg-gray-100 p-1" type="text" value="zero" readonly disabled />
+        </label>
+    </div>
+
+    <script defer src="./js/script.js"></script>
+
+
+
+</body>
+
+</html>
